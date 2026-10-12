@@ -4384,7 +4384,7 @@
       for(const footer of document.querySelectorAll('[data-composer-footer-responsive]:has([data-codex-composer])')){
         const composerRoot=footer.closest('[data-codex-composer-root]');
         const count=[...footer.querySelectorAll('button')].filter(b=>!['发送','停止'].includes(b.getAttribute('aria-label'))&&!b.classList.contains('qodex-send-empty')&&b.getBoundingClientRect().width>0).length;
-        if(composerRoot){const f=footer.getBoundingClientRect(),r=composerRoot.getBoundingClientRect();composerRoot.style.setProperty('--qodex-context-left',(f.left-r.left+6+count*42)+'px');composerRoot.style.setProperty('--qodex-context-top',(f.top-r.top+parseFloat(getComputedStyle(footer).borderTopWidth||'0'))+'px');}
+        if(composerRoot){const f=footer.getBoundingClientRect(),r=composerRoot.getBoundingClientRect();composerRoot.style.setProperty('--qodex-context-left',(Math.max(f.left+6,...[...footer.querySelectorAll('button')].filter(b=>!b.dataset.qodexAction&&!b.classList.contains('qodex-send-empty')&&b.getBoundingClientRect().width>0).map(b=>b.getBoundingClientRect().right+10))-r.left)+'px');composerRoot.style.setProperty('--qodex-context-top',(f.top-r.top+parseFloat(getComputedStyle(footer).borderTopWidth||'0'))+'px');}
         const action=footer.querySelector('button[aria-label="发送"],button[aria-label="停止"]');let empty=footer.querySelector('.qodex-send-empty');
         if(action){empty?.remove();}else if(!empty){empty=document.createElement('button');empty.type='button';empty.className='qodex-send-empty';empty.textContent='发送';empty.disabled=true;empty.setAttribute('aria-label','发送（请输入消息）');footer.appendChild(empty);}
       }

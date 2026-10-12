@@ -1,6 +1,6 @@
 {
   "name": "qodex-2007",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "modes": [
     "native",
     "qq"
@@ -10,5 +10,6 @@
   "node": ">=22",
   "containsCodexBinaries": false,
   "health": "candidate-unverified",
-  "personalDataIncluded": false
+  "personalDataIncluded": false,
+  "iconStyle": "QQ-era bevelled SVG icons"
 }
