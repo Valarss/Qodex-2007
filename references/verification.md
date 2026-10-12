@@ -7,3 +7,5 @@
 - Fresh-device full installation, mixed-monitor DPI, actual message send/upload/recording and long-run behavior remain unverified.
 
 Tests: `node scripts/inject.mjs --validate`, `node tests/cough-regression.mjs`. Live deployment checks use CDP 9343; do not expose that port beyond loopback.
+
+Version 1.1.0 installer: per-user Qdex 2007 penguin shortcut creation and launch tested on an existing supported copy; saved native mode retained when re-running Start, selector remains available. Full cold-start preference verification was interrupted and is not claimed complete. Author-machine Headroom entry was retained and its extra Qdex shortcut moved to a local backup; original integrated launch now explicitly shows the manager via its native bridge. No fresh-machine full installation claim.

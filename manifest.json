@@ -1,6 +1,6 @@
 {
   "name": "qodex-2007",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "modes": [
     "native",
     "qq"
@@ -11,5 +11,7 @@
   "containsCodexBinaries": false,
   "health": "candidate-unverified",
   "personalDataIncluded": false,
-  "iconStyle": "QQ-era bevelled SVG icons"
+  "iconStyle": "QQ-era bevelled SVG icons",
+  "desktopShortcut": "Qdex 2007",
+  "automaticChatInstructions": "installation assistant final response"
 }

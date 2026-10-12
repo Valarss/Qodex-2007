@@ -17,3 +17,11 @@ After any change, inspect both live windows through loopback CDP 9343. Verify th
 Use scripts/Stop.ps1 to remove skin behavior; close the copied application and open the original application for full rollback. Keep backups and the original installation intact. Preparing this package does not authorize GitHub publication or replacing the user's launcher.
 
 Native patch also checks the exact ASAR package version `26.1007.21434` and main chunk `main-BklS_2Y2.js`; GUI/store/engine version labels refer to different components.
+
+## Install with the desktop launcher
+
+Use scripts/Install.ps1 to install the bundle, build a supported local application copy, and create the per-user desktop shortcut **Qdex 2007** with assets/qq-penguin.ico. SourceApp and NodePath may be supplied; automatic discovery uses the installed OpenAI.Codex package and local node executable only, never downloads. ExistingAppDir is for a verified existing patched copy. Keep the configured ProfileDir stable to remember native/QQ across launches. This is automatic loading when the application opens, not Windows login autostart.
+
+After successful installation, you MUST explain usage in the user's current chat without requiring another question. State the actual verified result and exact shortcut name; explain double-clicking projects/chats, top-right native/QQ switch and remembered selection, original Codex entry vs Qdex entry, and rollback via Stop.ps1/original app. Read references/first-use.md and adapt its Chinese wording. Do not claim a shortcut works until its target, icon and launch result have been checked. If only skill instructions were copied, say application installation is still pending. Do not post a new prompt/message via an API; the installation assistant's own final response is the explanation.
+
+For an existing Headroom-integrated installation, preserve the user's original ChatGPT desktop entry and proxy/routing chain. Do not create a second launcher when the user wants the existing entry retained; use Install.ps1 -NoDesktopShortcut for such maintenance, and adapt the final usage explanation accordingly.
