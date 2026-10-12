@@ -1,5 +1,8 @@
 # Qodex 2007 Skill / Qodex 2007 技能
 
+可复制网址让codex一键安装
+Copy the URL to install Codex with one click
+
 QQ 2007/2012 蓝白风格 Windows 皮肤的本地 Codex Skill 与源码包。仅保留 **原生 / QQ** 两种模式。
 
 A locally saved Codex Skill and source package for the QQ 2007/2012 blue-white Windows skin. Only **原生 (Native) / QQ** modes remain.
