@@ -1,0 +1,213 @@
+/* Qodex 2007: QQ reference palette on Codex native geometry. */
+html.codex-qq-skin { color-scheme: light !important;
+ --color-text-primary:#000000 !important; --color-text-secondary:#17395f !important; --color-text-tertiary:#587795 !important;
+ --color-text-composer-primary:#000000 !important; --color-text-composer-placeholder:#587795 !important;
+ --color-token-text-primary:#000000 !important; --color-token-text-secondary:#17395f !important; --color-token-text-tertiary:#587795 !important;
+ --color-surface:#fff !important; --color-surface-primary:#fff !important; --color-surface-secondary:#eaf6ff !important;
+ --color-surface-tertiary:#e2f0fc !important; --color-surface-elevated:#fff !important; --color-surface-elevated-secondary:#eef6f9 !important;
+ --color-token-main-surface-primary:#fff !important; --color-token-bg-primary:#eaf6ff !important;
+ --color-token-border-default:rgba(54,112,174,.30) !important; --color-token-border-heavy:#76b8ee !important;
+ --color-border-default:rgba(54,112,174,.30) !important; --color-border-subtle:#e2f0fc !important;
+ --color-background-primary-surface:#e2f0fc !important;
+ --color-text-info:#2f7dcc !important; --color-token-text-link-foreground:#2f7dcc !important;
+ --color-background-info-surface:#eaf6ff !important;
+ --color-text-on-chat-accent:#17395f !important;
+ --color-text-chat-accent:#17395f !important;
+ --color-background-chat-accent:#eaf6ff !important;
+ --color-token-input-border:rgba(54,112,174,.30) !important;
+ --color-token-interactive-bg-secondary-hover:#e2f0fc !important;
+}
+html.codex-qq-skin body { background:#fff !important; color:#000000 !important; }
+html.codex-qq-skin aside.app-shell-left-panel { background:linear-gradient(180deg,#e2f0fc,#eaf6ff 65%) !important; border-right:1px solid rgba(54,112,174,.30) !important; }
+html.codex-qq-skin main[data-codexgf-role="main-surface"] { background:#fff !important; }
+html.codex-qq-skin #codex-qq-skin-retro-shell,
+html.codex-qq-skin #codex-qq-skin-chrome,
+html.codex-qq-skin #codex-qq-skin-companion,
+html.codex-qq-skin #codex-qq-skin-right-tray { display:none !important; }
+html.codex-qq-skin #root > div > main > header,
+html.codex-qq-skin #root > main > header,
+html.codex-qq-skin main > header.draggable { background:linear-gradient(180deg,#4191c8,#4a9ddc) !important; border-bottom:1px solid #2f7dcc !important; }
+html.codex-qq-skin [class~="group/user-message"] { color:#000000 !important; }
+html.codex-qq-skin [class~="group/user-message"] [class*="bg-"] { background:#eaf6ff !important; color:#000000 !important; }
+html.codex-qq-skin .qodex-message-heading { display:block; margin:0 0 6px; font-size:12px; line-height:18px; color:#17395f; font-weight:500; }
+html.codex-qq-skin .qodex-message-heading time { margin-left:8px; font-weight:400; color:#587795; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) {
+ display:grid !important; grid-template-columns:minmax(0,1fr) auto !important;
+ grid-template-rows:34px minmax(56px,auto) 32px !important;
+ gap:4px 8px !important;
+}
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has([data-composer-input]) { grid-row:2 !important; grid-column:1 / -1 !important; margin:0 !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="添加文件等内容"]) { grid-row:1 !important; grid-column:1 !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) { grid-row:1 !important; grid-column:2 !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [data-qodex-action] { position:absolute !important; right:10px !important; bottom:7px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { position:relative !important; padding:4px 8px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer])::before { content:''; position:absolute; top:0; left:0; right:0; height:38px; border-bottom:1px solid rgba(54,112,174,.30); background:#cae4f1; border-radius:8px 8px 0 0; pointer-events:none; z-index:-1; }
+html.codex-qq-skin [contenteditable="true"].composer-surface-chrome { background:transparent !important; border:0 !important; color:#000000 !important; padding:0 !important; box-shadow:none !important; }
+.qodex-brand { display:flex; align-items:center; gap:7px; margin:0 12px; white-space:nowrap; font-size:13px; font-weight:600; pointer-events:none; color:#17395f; }
+.qodex-brand img { width:23px; height:27px; object-fit:contain; }
+html[data-qodex-manager="true"].codex-qq-skin main[data-codexgf-role="main-surface"] { display:none !important; }
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel { width:100% !important; flex:1 !important; }
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel > div,
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel > div > div { width:100% !important; min-width:0 !important; }
+html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle { right:150px !important; top:8px !important; }
+html.codex-qq-skin #codex-qq-skin-chrome { pointer-events:none !important; }
+html.codex-qq-skin #codex-qq-skin-usage-panel,
+html.codex-qq-skin #codex-qq-skin-usage-toggle,
+html.codex-qq-skin #codex-qq-skin-home-pet { display:none !important; }
+html.codex-qq-skin main > header.draggable[data-qodex-title] { background:linear-gradient(180deg,#4191c8,#4a9ddc) !important; }
+html.codex-qq-skin main > header.draggable[data-qodex-title] > div { min-width:0; }
+#codex-qq-skin-toggle select { appearance:auto !important; }
+html[data-qodex-chat="true"].codex-qq-skin aside.app-shell-left-panel { display:none !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [data-qodex-action] { width:58px !important; border-radius:5px !important; background:#e2f0fc !important; color:#17395f !important; border:1px solid #76b8ee !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [data-qodex-action] svg { display:none; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button[data-qodex-action][aria-label="发送"]::after { content:'发送'; font-size:12px; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button[data-qodex-action][aria-label="停止"]::after { content:'停止'; font-size:12px; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) > div { position:static !important; }
+html[data-qodex-manager="true"].codex-qq-skin main[class*="_MainContentSurface_"] { display:none !important; }
+html[data-qodex-chat="true"].codex-qq-skin main[class*="_MainContentSurface_"] { border-left:0 !important; }
+html.codex-qq-skin .qodex-message-heading { align-self:flex-start; }
+html.codex-qq-skin [class~="group/user-message"] > .qodex-message-heading { align-self:flex-end; }
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable button[aria-label="文件"],
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable button[aria-label="编辑"],
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable button[aria-label="视图"],
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable button[aria-label="帮助"] { display:none !important; }
+html.codex-qq-skin .qodex-brand { position:fixed; top:8px; left:12px; z-index:2147482999; margin:0; }
+html.codex-qq-skin main > header.draggable { padding-left:146px !important; background:linear-gradient(180deg,#4191c8,#4a9ddc) !important; }
+html.codex-qq-skin .qodex-message-heading { display:none !important; }
+html.codex-qq-skin [class~="group/user-message"]::before { content:'我'; font-size:12px; font-weight:500; color:#17395f; margin-bottom:4px; }
+html.codex-qq-skin [data-local-conversation-final-assistant]::before { content:'Qdex'; font-size:12px; font-weight:500; color:#17395f; margin-bottom:6px; }
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable { padding-left:138px !important; }
+html[data-qodex-manager="true"].codex-qq-skin main > header.draggable > div { display:none !important; }
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel { flex:none !important; width:100% !important; min-width:100% !important; }
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel ~ * { display:none !important; }
+html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle { top:8px !important; right:150px !important; }
+html.codex-qq-skin [class~="group/user-message"]::before,
+html.codex-qq-skin [data-response-annotation-target]::before { content:attr(data-qodex-sender); display:block; font-size:12px; font-weight:500; color:#17395f; margin-bottom:6px; }
+html.codex-qq-skin [data-local-conversation-final-assistant]::before { content:none; }
+
+/* Input surface sampled from the supplied QQ 2012 reference. */
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { background:#eef6f9 !important; }
+html.codex-qq-skin [class~="group/user-message"] [class*="bg-"] { background:transparent !important; }
+
+@media(max-width:800px){html.codex-qq-skin main > header.draggable button[aria-label='文件'],html.codex-qq-skin main > header.draggable button[aria-label='编辑'],html.codex-qq-skin main > header.draggable button[aria-label='视图'],html.codex-qq-skin main > header.draggable button[aria-label='帮助']{display:none !important;}html[data-qodex-chat='true'].codex-qq-skin main > header.draggable button[aria-label='隐藏侧边栏']{display:none !important;}}
+
+/* Current application-menu chrome lives outside the retained old header. */
+html.codex-qq-skin [data-qodex-application-bar="true"] { background:linear-gradient(180deg,#4191c8,#4a9ddc) !important; border-bottom:1px solid #2f7dcc !important; }
+html.codex-qq-skin [data-qodex-application-bar="true"] > div { display:none !important; }
+html.codex-qq-skin[data-qodex-menu-open="true"] [data-qodex-application-bar="true"] > [data-qodex-native-menu] { display:flex !important; position:fixed; top:40px; left:12px; z-index:2147482998; padding:8px; background:#fff; border:1px solid #76b8ee; border-radius:6px; box-shadow:0 4px 12px rgba(54,112,174,.30); }
+html.codex-qq-skin .qodex-brand { color:#fff !important; font-size:13px; font-weight:600; }
+#qodex-application-menu { position:fixed; top:8px; left:140px; z-index:2147483000; width:26px; height:28px; border:1px solid #76b8ee; border-radius:5px; background:#eef6f9; color:#17395f; font-size:18px; line-height:20px; cursor:pointer; pointer-events:auto; -webkit-app-region:no-drag; }
+html.codex-qq-skin .qodex-send-empty { position:absolute; right:10px; bottom:7px; width:58px; height:28px; border:1px solid #76b8ee; border-radius:5px; background:#e2f0fc; color:#587795; font:12px system-ui; opacity:.65; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]):has(button[aria-label="发送"],button[aria-label="停止"]) .qodex-send-empty { display:none !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button[aria-label="发送"],html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button[aria-label="停止"] { position:absolute !important; right:10px !important; bottom:7px !important; width:58px !important; border-radius:5px !important; background:#e2f0fc !important; color:#17395f !important; border:1px solid #76b8ee !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { background:linear-gradient(to bottom,#cae4f1 0 38px,#eef6f9 38px 100%) !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer])::before { display:none !important; }
+html.codex-qq-skin [data-response-annotation-target] p,
+html.codex-qq-skin [data-response-annotation-target] li,
+html.codex-qq-skin [class~="group/user-message"] p,
+html.codex-qq-skin [class~="group/user-message"] li { color:#000000 !important; }
+
+/* QQ2012 reference: samples at (460,82/100/120/128/136), toolbar (460,310). */
+html.codex-qq-skin { --app-shell-application-menu-height:82px !important; }
+
+html.codex-qq-skin [data-qodex-application-bar="true"] { height:82px !important; min-height:82px !important; background:linear-gradient(180deg,#79c2ed 0%,#76bfea 42%,#95cbed 72%,#abcee4 86%,#e0eff6 100%) !important; border-bottom:1px solid #abcee4 !important; }
+html.codex-qq-skin .qodex-brand { left:10px; top:10px; gap:10px; align-items:flex-start; color:#000 !important; max-width:calc(100% - 270px); }
+html.codex-qq-skin .qodex-brand img { width:48px; height:48px; background:#eef6f9; border:1px solid #abcee4; padding:3px; }
+html.codex-qq-skin .qodex-brand span { padding-top:3px; overflow:hidden; text-overflow:ellipsis; }
+html.codex-qq-skin #qodex-application-menu { display:none !important; }
+html.codex-qq-skin [data-qodex-application-bar="true"] > [data-qodex-native-menu],
+html.codex-qq-skin[data-qodex-menu-open="true"] [data-qodex-application-bar="true"] > [data-qodex-native-menu] { display:flex !important; position:fixed; top:35px; left:67px; z-index:2147482998; gap:4px; padding:0; background:transparent; border:0; border-radius:0; box-shadow:none; -webkit-app-region:no-drag; }
+html.codex-qq-skin [data-qodex-native-menu] button { width:28px; height:28px; padding:0 !important; font-size:0 !important; color:#17395f !important; border-radius:2px; }
+html.codex-qq-skin [data-qodex-native-menu] button::before { font:18px "Segoe UI Symbol"; }
+html.codex-qq-skin #application-menu-trigger-file-menu::before { content:'▤'; }
+html.codex-qq-skin #application-menu-trigger-edit-menu::before { content:'✎'; }
+html.codex-qq-skin #application-menu-trigger-view-menu::before { content:'▣'; }
+html.codex-qq-skin #application-menu-trigger-help-menu::before { content:'ⓘ'; }
+html[data-qodex-chat="true"].codex-qq-skin [class*="_ApplicationMenuPageHeader_"] { display:none !important; }
+html[data-qodex-chat="true"].codex-qq-skin main[class*="_MainContentSurface_"] { border-radius:0 !important; background:#f4f7fc !important; }
+html.codex-qq-skin [data-qodex-composer-frame] { max-width:none !important; width:100% !important; margin-left:0 !important; margin-right:0 !important; padding-left:0 !important; padding-right:0 !important; border-radius:0 !important; box-shadow:none !important; }
+html.codex-qq-skin [data-pip-obstacle]:has([data-codex-composer-root]) { padding-bottom:0 !important; }
+html.codex-qq-skin [data-composer-body] { padding:0 !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { grid-template-columns:64px minmax(0,1fr) !important; grid-template-rows:30px minmax(100px,auto) 34px !important; padding:0 !important; gap:0 !important; border-top:1px solid #abcee4; background:linear-gradient(180deg,#e0eff6 0px,#cbe5f2 30px,#eef6f9 30px,#eef6f9 100%) !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) { grid-column:2 !important; justify-self:start !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) div { justify-content:flex-start !important; flex-grow:0 !important; width:auto !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has([data-composer-input]) { padding:8px 10px !important; border-top:1px solid #abcee4; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button:not([data-qodex-action]):not(.qodex-send-empty) { width:28px !important; min-width:28px !important; height:28px !important; padding:0 !important; border-radius:2px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [class*="_ComposerDropdownLabelText_"] { display:none !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button > svg:last-child:not(:first-child) { display:none !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [data-qodex-action],html.codex-qq-skin .qodex-send-empty { border-radius:2px !important; }
+
+html.codex-qq-skin [data-composer-navigation-target="reasoning"]::before { content:'⚙'; font:18px "Segoe UI Symbol"; color:#17395f; }
+html.codex-qq-skin [data-composer-navigation-target="reasoning"] > span { display:none !important; }
+html.codex-qq-skin [data-composer-navigation-target="reasoning"] { display:flex !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [aria-label="更改权限"]::before { content:'♧'; font:18px "Segoe UI Symbol"; color:#17395f; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [aria-label="更改权限"] > span { display:none !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) { display:flex !important; align-items:center !important; gap:5px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) div { display:contents !important; }
+/* More breathing room for the left-aligned input tools. */
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { grid-template-columns:90px minmax(0,1fr) !important; grid-template-rows:36px minmax(100px,auto) 34px !important; background:linear-gradient(180deg,#e0eff6 0px,#cbe5f2 36px,#eef6f9 36px,#eef6f9 100%) !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button:not([data-qodex-action]):not(.qodex-send-empty) { width:32px !important; min-width:32px !important; height:32px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="添加文件等内容"]) > div { gap:10px !important; padding-left:6px !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has(button[aria-label="听写"]) { gap:10px !important; }
+/* Align visible icon centres, including the model's generated icon. */
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) button:not([data-qodex-action]):not(.qodex-send-empty) { justify-content:center !important; align-items:center !important; gap:0 !important; }
+html.codex-qq-skin [data-composer-navigation-target="reasoning"]::before,
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) [aria-label="更改权限"]::before { display:block; width:16px; flex:0 0 16px; text-align:center; line-height:20px; }
+/* Standalone manager has no adjacent panel to resize. */
+html[data-qodex-manager="true"].codex-qq-skin aside.app-shell-left-panel > [class~="group/panel-resizer"] { display:none !important; }
+@media(max-width:400px) {
+ html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle { top:46px !important; right:8px !important; width:90px !important; }
+ html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle select { width:90px !important; min-width:0 !important; }
+ html[data-qodex-manager="true"].codex-qq-skin .qodex-brand { max-width:calc(100% - 100px); }
+}
+/* Keep the standalone manager visible below the native responsive breakpoint. */
+html[data-qodex-manager="true"].codex-qq-skin aside .sidebar-navigation > div { opacity:1 !important; }
+/* Compact transparent skin selector; size follows the selected label. */
+#codex-qq-skin-toggle { background:transparent !important; border:0 !important; box-shadow:none !important; width:auto !important; }
+#codex-qq-skin-toggle select { field-sizing:content !important; width:auto !important; min-width:0 !important; max-width:110px !important; height:22px !important; padding:0 3px !important; background:transparent !important; border:0 !important; border-radius:2px !important; box-shadow:none !important; }
+#codex-qq-skin-toggle select option { background:#eef6f9; color:#17395f; }
+#codex-qq-skin-toggle select:focus-visible { outline:1px solid #17395f; outline-offset:1px; }
+@media(max-width:400px) { html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle,html[data-qodex-manager="true"].codex-qq-skin #codex-qq-skin-toggle select { width:auto !important; min-width:0 !important; } }
+/* Remove the legacy oversized sidebar profile ornament. */
+#codex-qq-skin-retro-profile { display:none !important; }
+
+/* Native project context controls share the editor's tool row. */
+html.codex-qq-skin [data-codex-composer-root] { position:relative !important; }
+html.codex-qq-skin [data-composer-rail-item]:has([data-qodex-context-footer]) { display:contents !important; }
+html.codex-qq-skin [data-qodex-context-footer] { position:absolute !important; top:var(--qodex-context-top,0px) !important; left:var(--qodex-context-left,216px) !important; z-index:5; display:flex !important; align-items:center !important; gap:10px !important; width:auto !important; height:36px !important; padding:0 !important; margin:0 !important; background:transparent !important; border:0 !important; }
+html.codex-qq-skin [data-qodex-context-footer] > div { display:contents !important; }
+html.codex-qq-skin [data-qodex-context-footer] button { height:32px !important; width:32px !important; min-width:32px !important; padding:0 !important; justify-content:center !important; font-size:0 !important; }
+html.codex-qq-skin [data-qodex-context-footer] button > span { font-size:0 !important; }
+
+html.codex-qq-skin [data-qodex-context-footer] div { display:contents !important; }
+html.codex-qq-skin [data-qodex-context-footer] button { margin:0 !important; flex:0 0 32px !important; }
+html.codex-qq-skin[data-qodex-new-chat-pending="true"] main[class*="_MainContentSurface_"] { visibility:hidden !important; }
+html.codex-qq-skin [class*="_rail_"]:has([data-qodex-context-footer]) { display:contents !important; }
+html.codex-qq-skin [data-qodex-context-footer] { z-index:30 !important; }
+html.codex-qq-skin [class*="_rail_"]:has([data-qodex-context-footer]),html.codex-qq-skin [data-composer-rail-item]:has([data-qodex-context-footer]) { overflow:visible !important; }
+
+html.codex-qq-skin[data-qodex-settings="true"] main[class*="_MainContentSurface_"] { display:flex !important; visibility:visible !important; }
+html.codex-qq-skin[data-qodex-settings="true"] [class*="_ApplicationMenuPageHeader_"] { display:flex !important; }
+#qodex-welcome-subtitle { margin:12px 0 0; font:14px/1.6 "Microsoft YaHei",system-ui; color:#17395f; text-align:center; }
+
+html.codex-qq-skin [data-feature="game-source"]:has(> [data-qodex-welcome]) { flex-direction:column !important; align-items:center !important; width:100%; }
+html.codex-qq-skin [data-qodex-welcome] { white-space:nowrap; flex:none; }
+
+/* QQ frame replaces the native inset card and workspace title spacing. */
+html.codex-qq-skin [class*="_ApplicationMenuPageSurfaceLayout_"] { padding:0 !important; }
+html.codex-qq-skin main[class*="_MainContentSurface_"] { margin:0 !important; }
+html.codex-qq-skin[data-qodex-chat="true"] [class*="_WorkspaceContent_"] { padding-top:0 !important; }
+html.codex-qq-skin .pointer-events-none:has(> [data-qodex-composer-frame]) { padding-bottom:0 !important; }
+html.codex-qq-skin [data-qodex-composer-frame].flex { gap:0 !important; }
+
+html.codex-qq-skin[data-qodex-manager="true"] aside.app-shell-left-panel { margin-top:0 !important; }
+html.codex-qq-skin .thread-scroll-container { padding-top:8px !important; scrollbar-gutter:stable !important; }
+html.codex-qq-skin ::-webkit-scrollbar, html.codex-qq-skin ::-webkit-scrollbar-track, html.codex-qq-skin ::-webkit-scrollbar-corner { background:#f4f7fc !important; }
+html.codex-qq-skin[data-qodex-manager="true"] ::-webkit-scrollbar, html.codex-qq-skin[data-qodex-manager="true"] ::-webkit-scrollbar-track { background:#f6fbff !important; }
+
+/* Fill the input grid row instead of vertically centering its native short box. */
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) > :has([data-composer-input]) { align-self:stretch !important; height:100% !important; min-height:0 !important; box-sizing:border-box !important; }
+
+/* Empty native attachment spacing must not create a blue strip above tools. */
+html.codex-qq-skin [data-composer-attachments]:empty { display:none !important; padding:0 !important; margin:0 !important; min-height:0 !important; }
+html.codex-qq-skin [data-composer-footer-responsive]:has([data-codex-composer]) { margin-bottom:0 !important; }

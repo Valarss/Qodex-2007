@@ -1,0 +1,14 @@
+{
+  "name": "qodex-2007",
+  "version": "1.0.0",
+  "modes": [
+    "native",
+    "qq"
+  ],
+  "supportedAsarPackage": "26.1007.21434",
+  "supportedMainChunk": "main-BklS_2Y2.js",
+  "node": ">=22",
+  "containsCodexBinaries": false,
+  "health": "candidate-unverified",
+  "personalDataIncluded": false
+}

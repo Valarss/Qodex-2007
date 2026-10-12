@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "qq-stable-default",
+  "kind": "qq-stable",
+  "name": "Qodex",
+  "brandSubtitle": "QQgpt",
+  "tagline": "咗眼鼡唻莣汜沵，祐眼鼡唻汜炷沵❤️",
+  "projectPrefix": "选择项目 · ",
+  "projectLabel": "◉  选择项目",
+  "statusText": "蕾姆陪你在线",
+  "quote": "搞么子",
+  "image": "portal-hero.png",
+  "appearance": "light",
+  "art": {
+    "safeArea": "center",
+    "taskMode": "off"
+  },
+  "layout": {
+    "mode": "classic-three-pane",
+    "rightPanel": "open",
+    "minWidth": 1180,
+    "rightWidth": 300
+  },
+  "sound": {
+    "enabled": true,
+    "volume": 0.48,
+    "completed": "cough",
+    "approval": "alert",
+    "online": "knock"
+  },
+  "colors": {
+    "background": "#eaf6ff",
+    "panel": "#ffffff",
+    "panelAlt": "#e2f0fc",
+    "accent": "#2f7dcc",
+    "accentAlt": "#5ba7ec",
+    "secondary": "#76b8ee",
+    "highlight": "#1f64ad",
+    "text": "#17395f",
+    "muted": "#587795",
+    "line": "rgba(54, 112, 174, .30)"
+  },
+  "promoTitle": "蕾姆的小角落",
+  "promoSub": "Qodex · QQgpt",
+  "promoUrl": ""
+}
